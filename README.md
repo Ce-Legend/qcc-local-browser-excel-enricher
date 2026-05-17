@@ -163,12 +163,6 @@ region, area, province, city, 地区, 省市, 城市
 python -m pytest -q
 ```
 
-## 🔒 公开版说明
-
-这个 repo 是一次真实项目的脱敏整理版。
-
-它保留的是通用工程能力：Excel 读取、浏览器流程、进度恢复、异常状态、结果导出和测试。和具体交付现场强绑定的内容，都没有放进公开版本。
-
 ## 🙌 参考
 
 - [Playwright Python](https://playwright.dev/python/)：浏览器自动化。
