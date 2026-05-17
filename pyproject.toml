@@ -1,0 +1,22 @@
+[project]
+name = "qcc-local-browser-excel-enricher"
+version = "0.1.0"
+description = "Local browser workflow for enriching company Excel sheets with resumable progress and Excel export."
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl>=3.1.0",
+  "pandas>=2.0.0",
+  "playwright>=1.40.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+qcc-employee-scraper = "qcc_employee_scraper.cli:main"
+qcc-excel-enricher = "qcc_employee_scraper.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+include = ["qcc_employee_scraper*"]
